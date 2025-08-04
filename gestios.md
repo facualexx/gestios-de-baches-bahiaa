@@ -6,12 +6,12 @@ La ciudad de Bahía Blanca enfrenta problemas recurrentes relacionados con bache
 
 2. Objetivo del sistema
 Diseñar un Sistema que permita:
-. Registrar los datos de los usuarios que reportan baches, para asegurar el seguimiento de los casos y evitar duplicados.
-. Registrar reportes ciudadanos sobre baches.
-. Clasificarlos por nivel de gravedad y ubicación.
-. Evitar duplicación de reportes.
-. Asignar supervisores e inspectores según la prioridad.
-. Llevar seguimiento técnico y presupuestario de cada intervención.
+ Registrar los datos de los usuarios que reportan baches, para asegurar el seguimiento de los casos y evitar duplicados.
+ Registrar reportes ciudadanos sobre baches.
+ Clasificarlos por nivel de gravedad y ubicación.
+ Evitar duplicación de reportes.
+ Asignar supervisores e inspectores según la prioridad.
+ Llevar seguimiento técnico y presupuestario de cada intervención.
 
 3. Usuarios del sistema
 . Administradores / Personal municipal: gestionan los reportes, asignan cuadrillas, verifican datos, supervisan los trabajos.
