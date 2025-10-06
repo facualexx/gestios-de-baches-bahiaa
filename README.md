@@ -83,17 +83,14 @@ flowchart LR
     subgraph Contexto [Diagrama de Contexto]
         C[Ciudadano] -->|Reporte (foto, ubicación, tipo)| S[Sistema de Gestión de Baches]
         S -->|Confirmación, estado del caso| C
-
         A[Administrador Municipal] -->|Asignación cuadrillas, cambios de estado| S
         S -->|Listas de reportes, estadísticas| A
-
         I[Inspector / Supervisor] -->|Validación en terreno| S
         S -->|Casos asignados| I
-
         N[Servicio de Notificaciones] -->|SMS / Email| C
         S -->|Solicitud de notificación| N
     end
-
+    
      ==== DFD NIVEL 1 ====
     subgraph DFD [DFD Nivel 1]
         subgraph P1[1. Recepción de Reportes]
@@ -107,12 +104,10 @@ flowchart LR
             D1 --> P2
             D2[(Usuarios)] --> P2
         end
-
         subgraph P3[3. Priorización]
             P2 --> P3
             P3 --> D1
         end
-
         subgraph P4[4. Asignación y Gestión]
             P3 --> P4
             P4 --> D3[(Intervenciones/Presupuesto)]
@@ -121,13 +116,11 @@ flowchart LR
             P4 --> I
             I --> P4
         end
-
         subgraph P5[5. Seguimiento y Costos]
             P4 --> P5
             P5 --> D3
             P5 --> A
         end
-
         P2 -->|Duplicado detectado| N
         P4 -->|Avisos de avance| N
         N -->|SMS/Email| C
