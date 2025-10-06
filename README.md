@@ -75,18 +75,17 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 # Diagramas
 
-### 📌 Diagrama de Contexto (Nivel 0)
-```mermaid
 flowchart TD
     %% Diagrama de Contexto
-    C[Ciudadano] -->|Reporte (foto, ubicación, tipo)| S[Sistema de Gestión de Baches]
-    S -->|Confirmación, estado del caso| C
+    C[Ciudadano] -->|Reporte: foto ubicacion tipo| S[Sistema de Gestion de Baches]
+    S -->|Confirmacion, estado del caso| C
 
-    A[Administrador Municipal] -->|Asignación de cuadrillas, cambios de estado| S
-    S -->|Listas de reportes, estadísticas| A
+    A[Administrador Municipal] -->|Asignacion de cuadrillas, cambios de estado| S
+    S -->|Listas de reportes, estadisticas| A
 
-    I[Inspector / Supervisor] -->|Validación en terreno| S
+    I[Inspector / Supervisor] -->|Validacion en terreno| S
     S -->|Casos asignados| I
 
-    N[Servicio de Notificaciones] -->|SMS / Email| C
-    S -->|Solicitud de notificación| N
+    N[Servicio de Notificaciones] -->|SMS o Email| C
+    S -->|Solicitud de notificacion| N
+
