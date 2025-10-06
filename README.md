@@ -77,9 +77,9 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ## 📌 Diagrama de Contexto (Nivel 0) + 📌 DFD Nivel 1
 
-```mermaid
+mermaid
 flowchart LR
-    %% ==== DIAGRAMA DE CONTEXTO ====
+    ==== DIAGRAMA DE CONTEXTO ====
     subgraph Contexto [Diagrama de Contexto]
         C[Ciudadano] -->|Reporte (foto, ubicación, tipo)| S[Sistema de Gestión de Baches]
         S -->|Confirmación, estado del caso| C
@@ -94,7 +94,7 @@ flowchart LR
         S -->|Solicitud de notificación| N
     end
 
-    %% ==== DFD NIVEL 1 ====
+     ==== DFD NIVEL 1 ====
     subgraph DFD [DFD Nivel 1]
         subgraph P1[1. Recepción de Reportes]
             C -->|Reporte| P1
