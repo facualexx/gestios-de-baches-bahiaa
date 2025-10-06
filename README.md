@@ -73,19 +73,4 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ---
 
-# Diagramas
-
-flowchart TD
-    %% Diagrama de Contexto
-    C[Ciudadano] -->|Reporte: foto ubicacion tipo| S[Sistema de Gestion de Baches]
-    S -->|Confirmacion, estado del caso| C
-
-    A[Administrador Municipal] -->|Asignacion de cuadrillas, cambios de estado| S
-    S -->|Listas de reportes, estadisticas| A
-
-    I[Inspector / Supervisor] -->|Validacion en terreno| S
-    S -->|Casos asignados| I
-
-    N[Servicio de Notificaciones] -->|SMS o Email| C
-    S -->|Solicitud de notificacion| N
 
