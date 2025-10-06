@@ -75,6 +75,8 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 # Diagramas
 
+### 📌 Diagrama de Contexto (Nivel 0)
+```mermaid
 flowchart TD
     %% Diagrama de Contexto
     C[Ciudadano] -->|Reporte (foto, ubicación, tipo)| S[Sistema de Gestión de Baches]
