@@ -78,4 +78,5 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 
 
+<img width="1536" height="1024" alt="diagrama de contexto" src="https://github.com/user-attachments/assets/76f2b43a-033b-4842-bd66-4efc838a496b" />
 
