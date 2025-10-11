@@ -80,3 +80,8 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 <img width="1536" height="1024" alt="diagrama de contexto" src="https://github.com/user-attachments/assets/76f2b43a-033b-4842-bd66-4efc838a496b" />
 
+
+##  Diagrama de caso de uso
+
+<img width="1536" height="1024" alt="caso de uso 1" src="https://github.com/user-attachments/assets/d27dba90-dda0-454f-a7a3-ca49a1d5d074" />
+<img width="1536" height="1024" alt="caso de uso 2" src="https://github.com/user-attachments/assets/8dfd6fdb-a4f1-4906-9fb8-36e37b79a74e" />
