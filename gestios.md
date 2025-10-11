@@ -1,5 +1,5 @@
-# *Sistema de Registro y Gestión de Baches Bahía Blanca*
-
+# *Sistema de Registro y Gestión de Baches Bahía Blanca*                                          creado por facundo dies
+                                                                                                              lucas garce
 ## Introducción
 La ciudad de Bahía Blanca enfrenta problemas recurrentes relacionados con baches en la vía pública.  
 Para mejorar la eficiencia en la reparación y el seguimiento de estos casos, se propone el desarrollo de un sistema que permita registrar, administrar y priorizar los reportes de baches realizados por los ciudadanos.
