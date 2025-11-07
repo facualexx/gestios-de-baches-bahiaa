@@ -84,8 +84,6 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ##  Diagrama de caso de uso
 
-
-[Uploading diagrama-baches-bb (1).graph TB
     subgraph Sistema["<b>Sistema de Registro y Gestión de Baches - Bahía Blanca</b>"]
         CU01("<b>Reportar<br/>Bache</b>")
         CU02("<b>Verificar<br/>Reporte</b>")
