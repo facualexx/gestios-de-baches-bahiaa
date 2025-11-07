@@ -84,8 +84,9 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ##  Diagrama de caso de uso
 
-  
-<img width="3154" height="812" alt="Untitled diagram-2025-11-07-020236" src="https://github.com/user-attachments/assets/6e572eef-9b58-4c05-b9e3-e072d2dd618c" />
+  <img width="3154" height="812" alt="Untitled diagram-2025-11-07-020236" src="https://github.com/user-attachments/assets/fd4bf8fb-d4ff-4be1-80f2-2d035ad193e6" />
+
+
 
 
 # Documentación de Casos de Uso  
