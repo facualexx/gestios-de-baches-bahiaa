@@ -84,65 +84,8 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ##  Diagrama de caso de uso
 
-    subgraph Sistema["<b>Sistema de Registro y Gestión de Baches - Bahía Blanca</b>"]
-        CU01("<b>Reportar<br/>Bache</b>")
-        CU02("<b>Verificar<br/>Reporte</b>")
-        CU03("<b>Asignar<br/>Reparación</b>")
-        CU04("<b>Generar<br/>Informe</b>")
-        CU05("<b>Consultar<br/>Estado</b>")
-        CU06("<b>Gestionar<br/>Usuarios</b>")
-        CU07("<b>Detectar<br/>Duplicados</b>")
-        CU08("<b>Registrar<br/>Daños a<br/>Vehículos</b>")
-        CU09("<b>Calcular<br/>Presupuesto</b>")
-        CU10("<b>Actualizar<br/>Estado</b>")
-        CU11("<b>Notificar<br/>Ciudadano</b>")
-        CU12("<b>Priorizar<br/>por Gravedad</b>")
-        CU13("<b>Agrupar<br/>Zona</b>")
-    end
-    
-    Ciudadano(["<b>Ciudadano</b>"])
-    Inspector(["<b>Inspector/<br/>Obras Públicas</b>"])
-    Admin(["<b>Administrador<br/>Municipal</b>"])
-    
-    Ciudadano -->|realiza| CU01
-    Ciudadano -->|consulta| CU05
-    Ciudadano -->|documenta| CU08
-    
-    Inspector -->|ejecuta| CU02
-    Inspector -->|realiza| CU03
-    Inspector -->|actualiza| CU10
-    Inspector -->|estima| CU09
-    
-    Admin -->|genera| CU04
-    Admin -->|administra| CU06
-    Admin -->|supervisa| CU03
-    Admin -->|consulta| CU05
-    
-    CU01 -.include.-> CU07
-    CU01 -.include.-> CU11
-    CU02 -.extend.-> CU08
-    CU02 -.include.-> CU12
-    CU03 -.include.-> CU09
-    CU03 -.include.-> CU13
-    CU10 -.include.-> CU11
-    
-    style Sistema fill:#f0f4ff,stroke:#1a237e,stroke-width:4px,color:#000
-    style Ciudadano fill:#4caf50,stroke:#1b5e20,stroke-width:3px,color:#fff
-    style Inspector fill:#2196f3,stroke:#0d47a1,stroke-width:3px,color:#fff
-    style Admin fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#fff
-    style CU01 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU02 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU03 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU04 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU05 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU06 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU07 fill:#ff7043,stroke:#bf360c,stroke-width:3px,color:#fff
-    style CU08 fill:#ff7043,stroke:#bf360c,stroke-width:3px,color:#fff
-    style CU09 fill:#9c27b0,stroke:#4a148c,stroke-width:3px,color:#fff
-    style CU10 fill:#ffeb3b,stroke:#f57f17,stroke-width:3px,color:#000
-    style CU11 fill:#00bcd4,stroke:#006064,stroke-width:3px,color:#fff
-    style CU12 fill:#9c27b0,stroke:#4a148c,stroke-width:3px,color:#fff
-    style CU13 fill:#9c27b0,stroke:#4a148c,stroke-width:3px,color:#fffmermaid…]()
+  
+<img width="3154" height="812" alt="Untitled diagram-2025-11-07-020236" src="https://github.com/user-attachments/assets/6e572eef-9b58-4c05-b9e3-e072d2dd618c" />
 
 
 # Documentación de Casos de Uso  
