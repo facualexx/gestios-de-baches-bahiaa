@@ -5,80 +5,110 @@
 &nbsp;
 
 ## Introducción
-La ciudad de Bahía Blanca enfrenta problemas recurrentes relacionados con baches en la vía pública.
+La ciudad de Bahía Blanca enfrenta problemas recurrentes relacionados con baches en la vía pública.<br>
 Para mejorar la eficiencia en la reparación y el seguimiento de estos casos, se propone el desarrollo de un sistema que permita registrar, administrar y priorizar los reportes de baches realizados por los ciudadanos.
 
 ### Objetivo del sistema
 Diseñar un Sistema que permita:
- * Registrar los datos de los usuarios que reportan baches, para asegurar el seguimiento de los casos y evitar duplicados.
- * Registrar reportes ciudadanos sobre baches.
- * Clasificarlos por nivel de gravedad y ubicación.
- * Evitar duplicación de reportes.
- * Asignar supervisores e inspectores según la prioridad.
- * Llevar seguimiento técnico y presupuestario de cada intervención.
+* Registrar los datos de los usuarios que reportan baches, para asegurar el seguimiento de los casos y evitar duplicados.
+* Registrar reportes ciudadanos sobre baches.
+* Clasificarlos por nivel de gravedad y ubicación.
+* Evitar duplicación de reportes.
+* Asignar supervisores e inspectores según la prioridad.
+* Llevar seguimiento técnico y presupuestario de cada intervención.
 
 ---
 
 ## Usuarios del sistema
- * **Administradores / Personal municipal**: gestionan los reportes, asignan cuadrillas, verifican datos, supervisan los trabajos.  
- * **Ciudadanos / Usuarios externos**: reportan baches con evidencia (foto, video) e información básica del lugar.  
+* **Administradores / Personal municipal**: gestionan los reportes, asignan cuadrillas, verifican datos, supervisan los trabajos.  
+* **Ciudadanos / Usuarios externos**: reportan baches con evidencia (foto, video) e información básica del lugar.  
 
 ---
 
 ## Datos que gestiona el sistema
-* Ubicación del bache: barrio, calle, coordenadas aproximadas.  
-* IP del dispositivo o identificación del usuario (para evitar duplicados).  
-* Tipo de calle: asfalto, tierra, empedrada, etc.  
-* Tipo de rotura: grieta superficial, pozo profundo, desmoronamiento, hundimiento, etc.  
-* Escala de gravedad del bache (1 a 10), según evidencia y cantidad de reportes.  
-* Evidencia: fotos, videos.  
-* Reportes relacionados (múltiples reclamos sobre la misma zona).  
-* Estado del bache: registrado, en evaluación, en reparación, resuelto.  
-* Daños a vehículos u objetos, si los hubo, con su respectiva documentación.  
-* Materiales necesarios para la reparación y presupuesto estimado.  
-* Tiempo desde el primer reporte.  
+* Ubicación y Tipo
+    * Ubicación del bache: barrio, calle, coordenadas aproximadas.  
+    * Tipo de calle: asfalto, tierra, empedrada, etc.
+    * Ubicación dentro de la calzada: Medio, Cuneta, Bordillo.
+    * Tipo de rotura: grieta superficial, pozo profundo, desmoronamiento, hundimiento, etc.
+* Identificación y Gravedad  
+    * IP del dispositivo o identificación del usuario (para evitar duplicados).
+    * Escala de gravedad del bache (1 a 10), según evidencia y cantidad de reportes.
+* Evidencia Y Estado
+    * Evidencia: fotos, videos.
+    * Reportes relacionados (múltiples reclamos sobre la misma zona).
+    * Estado del bache: registrado, en evaluación, en reparación, resuelto.
+* Logística y Costos
+    * Daños a vehículos u objetos, si los hubo, con su respectiva documentación.
+    * Materiales necesarios para la reparación y presupuesto estimado.  
+    * Tiempo desde el primer reporte.
+    * Detalle de la Orden de Trabajo: Equipo asignado, cantidad de material de relleno, horas estimadas de reparación, costo total de reparación (materiales + mano de obra).
 
 ---
 
 ## Funcionalidades principales
-* Registro de nuevos reportes con validación por IP o usuario.  
-* Asignación de prioridad en base a evidencia y volumen de reportes.  
-* Notificar al usuario cuando su reporte fue enviado exitosamente, y en caso de detectar un reporte previo del mismo usuario, informarle que ya existe un caso abierto asociado.  
-* Detectar si ya existe un caso abierto en la misma zona y notificar al usuario antes de permitir un nuevo reporte, para evitar duplicaciones innecesarias.  
-* Generación de estadísticas y reportes por zona.  
-* Asignación automática de supervisores cuando hay alta actividad en una misma área.  
-* Registro y seguimiento de costos, materiales y tiempo de obra.  
+* Regístro y Validación
+    * Registro de nuevos reportes con validación por IP o usuario.  
+* Priorización
+    * Asignación de prioridad en base a evidencia y volumen de reportes.  
+* Notificación al Usuario
+    * Notificar al usuario cuando su reporte fue enviado exitosamente, y en caso de detectar un reporte previo del mismo usuario, informarle que ya existe un caso abierto asociado.  
+* Detección de Duplicados
+    * Detectar si ya existe un caso abierto en la misma zona y notificar al usuario antes de permitir un nuevo reporte, para evitar duplicaciones innecesarias.  
+* Reportes y Estadísticas
+    * Generación de estadísticas y reportes por zona.  
+* Asignación Automática
+    * Asignación automática de supervisores cuando hay alta actividad en una misma área.  
+* Seguimiento de Costos
+    * Registro y seguimiento de costos, materiales y tiempo de obra.  
 
 ---
 
 ## Prevención de duplicados y abusos
 El sistema implementará mecanismos para evitar reportes duplicados, como:
-- Verificación por dirección e IP.  
-- Registro de usuarios frecuentes.  
-- Notificación al ciudadano si ya existe un caso abierto en esa zona.  
-- Limitación de múltiples reportes por día desde un mismo origen.  
+- Verificación por dirección e IP.  
+- Registro de usuarios frecuentes.  
+- Notificación al ciudadano si ya existe un caso abierto en esa zona.  
+- Limitación de múltiples reportes por día desde un mismo origen.  
 
 ---
 
 ## Técnicas utilizadas para el relevamiento de requerimientos
-* Observación directa de zonas afectadas.  
-* Entrevistas a ciudadanos y empleados municipales.  
-* Revisión de reportes previos o sistemas similares.  
-* Prototipos conceptuales del sistema.  
-* Análisis de patrones de reclamos según barrio.  
+* Obsevación Directa
+    * Observación directa de zonas afectadas.  
+* Entrevistas
+    * Entrevistas a ciudadanos y empleados municipales.  
+* Revisión de Sistemas
+    * Revisión de reportes previos o sistemas similares.  
+* Prototipos
+    * Prototipos conceptuales del sistema.  
+* Análisis de patrones
+    * Análisis de patrones de reclamos según barrio.  
 
 ---
 
 ## Consideraciones adicionales
-En caso de reclamos por daños, el sistema permitirá subir documentación de respaldo, aunque el tratamiento legal dependerá del municipio.  
-La priorización automática considera tanto la gravedad técnica como la cantidad de reportes.  
-Las zonas con múltiples baches serán agrupadas para evaluar intervenciones integrales.  
+En caso de reclamos por daños, el sistema permitirá subir documentación de respaldo, aunque el tratamiento legal dependerá del municipio.<br>
+La priorización automática considera tanto la gravedad técnica como la cantidad de reportes.<br>
+Las zonas con múltiples baches serán agrupadas para evaluar intervenciones integrales.  
+
+---
+
+## Requerimientos No Funcionales (RNF)
+
+| Categoría | Requisito | Propósito |
+| :---: | :---: | :---: |
+| **Accesibilidad (A11Y)** | El sistema debe cumplir con el nivel AA de las pautas WCAG 2.1. | Garantizar el acceso a usuarios con discapacidades visuales o cognitivas (ej. daltónicos, disléxicos). |
+| **Usabilidad** | La interfaz debe ofrecer al menos dos esquemas de color contrastantes (modo oscuro / alto contraste). | Asistencia para usuarios con visión reducida o sensibilidad a la luz. |
+| **Usabilidad** | La tipografía debe ser **clara y escalable**, evitando fuentes con serifa excesivas. | Mejorar la legibilidad para usuarios con dislexia o TDAH. |
+| **Rendimiento** | El tiempo de carga de cualquier pantalla (excluyendo la generación de informes) no debe superar los 2 segundos. | |
+| **Seguridad** | Todas las comunicaciones de reportes y gestión deben usar cifrado SSL/TLS. | Proteger los datos de ubicación y la información municipal. |
 
 ---
 
 # Diagramas
 
-##  Diagrama de Contexto
+##  Diagrama de Contexto
 
 <p align="center">
 <img width="80%" height="100%" alt="diagrama de contexto" src="https://github.com/user-attachments/assets/76f2b43a-033b-4842-bd66-4efc838a496b" />
@@ -86,15 +116,15 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 &nbsp;
 
-##  Diagrama de caso de uso
+##  Diagrama de caso de uso
 
 <p align="center">
- <img width="45%" height="100%" alt="Untitled diagram-2025-11-10-105808" src="https://github.com/user-attachments/assets/ce48a6a9-7a33-48af-97fd-f51c205eb682" />
+ <img width="45%" height="100%" alt="Untitled diagram-2025-11-10-105808" src="https://github.com/user-attachments/assets/ce48a6a9-7a33-48af-97fd-f51c205eb682" />
 </p>
 
 &nbsp;
 
-# Documentación de Casos de Uso  
+# Documentación de Casos de Uso  
 **Sistema de Registro y Gestión de Baches - Bahía Blanca**
 
 ---
@@ -108,7 +138,7 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 | **Actor Principal** | Ciudadano |
 | **Descripción** | El ciudadano utiliza el sistema para reportar un bache detectado en la vía pública. El sistema permite registrar la ubicación exacta mediante GPS o mapa interactivo, adjuntar una fotografía y una breve descripción del daño. Una vez enviado, el reporte se almacena con un identificador único para su posterior seguimiento y verificación. |
 | **Precondiciones** | El ciudadano debe tener acceso a internet y una cuenta activa (opcional). El sistema debe estar disponible y operativo. |
-| **Flujo Principal** | 1. El ciudadano accede a la aplicación web o móvil del sistema.<br>2. Selecciona la opción “Reportar bache”.<br>3. El sistema muestra un formulario con campos para ubicación, descripción y carga de imagen.<br>4. El ciudadano permite el acceso al GPS o marca la ubicación manualmente.<br>5. El ciudadano adjunta una foto opcional y completa la descripción.<br>6. El sistema valida los campos obligatorios (ubicación y descripción).<br>7. El ciudadano confirma el envío del reporte.<br>8. El sistema guarda los datos, genera un identificador único y asigna el estado “Pendiente de verificación”.<br>9. El sistema muestra un mensaje de confirmación y número de seguimiento. |
+| **Flujo Principal** | 1. El ciudadano accede a la aplicación web o móvil del sistema.<br>2. Selecciona la opción “Reportar bache”.<br>3. El sistema muestra un formulario con campos para ubicación, ubicación en la calzada, nivel de gravedad inicial (1-10), descripción y carga de imagen.<br>4. El ciudadano permite el acceso al GPS o marca la ubicación manualmente.<br>5. El ciudadano adjunta una foto opcional y completa la descripción.<br>6. El sistema valida los campos obligatorios (ubicación y descripción).<br>7. El ciudadano confirma el envío del reporte.<br>8. El sistema guarda los datos, genera un identificador único y asigna el estado “Pendiente de verificación”.<br>9. El sistema muestra un mensaje de confirmación y número de seguimiento. |
 | **Flujo Alternativo** | 4a. Si el GPS no está disponible, el sistema permite ingresar la dirección manualmente.<br>4b. Continúa en el paso 5.<hr>6a. Si faltan campos obligatorios, el sistema muestra un mensaje de error y no permite continuar.<br>6b. El ciudadano corrige y continúa en el paso 7.<hr><br>8a. Si hay un error en la conexión, el sistema guarda temporalmente el reporte, incluyendo el identificador único generado, para reintento automático. |
 | **Postcondiciones** | El reporte queda almacenado en la base de datos y disponible para revisión por parte del inspector. |
 | **Requerimientos Especiales** | El sistema debe validar la ubicación dentro del área urbana de Bahía Blanca. Las imágenes deben comprimirse automáticamente para optimizar el almacenamiento. |
@@ -123,9 +153,9 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 | **Nombre** | Asignar Reparación |
 | **Actor Principal** | Inspector / Área de Obras Públicas |
 | **Actor Secundario** | Administrador Municipal (Consume el dato de la asignación para informes). |
-| **Descripción** | Este caso de uso permite a los inspectores o al personal de Obras Públicas revisar los reportes de baches validados, asignar una cuadrilla de trabajo y establecer un nivel de prioridad. El objetivo es garantizar una planificación eficiente y ordenada de las reparaciones. |
+| **Descripción** | Este caso de uso permite a los inspectores o al personal de Obras Públicas revisar los reportes de baches validados, asignar una cuadrilla de trabajo y establecer un nivel de prioridad, que incluye la gravedad técnica (del reporte) y la prioridad operacional (por zona o tráfico). El objetivo es garantizar una planificación eficiente y ordenada de las reparaciones. |
 | **Precondiciones** | Debe existir al menos un reporte verificado y pendiente de asignación. El sistema debe tener cuadrillas disponibles registradas. |
-| **Flujo Principal** | 1. El inspector accede al módulo de “Gestión de reportes”.<br>2. El sistema muestra la lista de reportes pendientes de reparación, con información de ubicación, gravedad y fecha del reporte.<br>3. El inspector selecciona un reporte para asignar.<br>4. El sistema muestra los equipos de trabajo disponibles y sus cargas actuales.<br>5. El inspector elige una cuadrilla y asigna prioridad (Alta, Media, Baja).<br>6. El sistema registra la asignación y actualiza el estado del reporte a “En reparación”.<br>7. Se genera una notificación automática para la cuadrilla asignada, incluyendo el Identificador Único y la ubicación. |
+| **Flujo Principal** | 1. El inspector accede al módulo de “Gestión de reportes”.<br>2. El sistema muestra la lista de reportes pendientes de reparación, con información de ubicación, gravedad y fecha del reporte.<br>3. El inspector selecciona un reporte para asignar.<br>4. El sistema muestra los equipos de trabajo disponibles y sus cargas actuales.<br>5. El inspector elige una cuadrilla y asigna **Prioridad Operacional (Alta, Media, Baja)** y **Horas estimadas y Materiales de reparación** (para cálculo del costo).<br>6. El sistema registra la asignación, calcula el costo estimado de la reparación, y actualiza el estado del reporte a “En reparación”.<br>7. Se genera una notificación automática para la cuadrilla asignada, incluyendo el Identificador Único y la ubicación. |
 | **Flujo Alternativo** | 4a. Si no hay cuadrillas disponibles, el sistema permite dejar el reporte en estado “En espera” y muestra una alerta informativa.<hr><br>6a. Si ocurre un error de registro, el sistema conserva los datos temporales y solicita reintento. |
 | **Postcondiciones** | El reporte queda vinculado a una cuadrilla específica y visible en el panel de seguimiento de obras. |
 | **Requerimientos Especiales** | El sistema debe permitir filtrar los reportes por zona, fecha y prioridad. Las asignaciones deben registrarse con sello de tiempo (timestamp) para trazabilidad. |
