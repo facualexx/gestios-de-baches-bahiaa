@@ -1,4 +1,4 @@
-### Creado por $${\color{red} Facundo \space \color {orange} Diez \space :star: \space \color {blue} Lucas \space \color {lightblue} Garcé }$$
+### Creado por Facundo Diez :star: Lucas Garcé
 
 <h1 align="center"><i> Sistema de Registro y Gestión de Baches Bahía Blanca </i></h1>
 
