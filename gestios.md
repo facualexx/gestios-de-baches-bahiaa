@@ -111,19 +111,12 @@ Las zonas con múltiples baches serán agrupadas para evaluar intervenciones int
 
 ##  Diagrama de Contexto
 
-<p align="center">
-<img width="80%" height="100%" alt="diagrama de contexto" src="https://github.com/user-attachments/assets/76f2b43a-033b-4842-bd66-4efc838a496b" />
-</p>
-
-&nbsp;
+<img width="2281" height="807" alt="Untitled diagram-2025-11-11-165848" src="https://github.com/user-attachments/assets/6aba9f4a-3017-4f50-9cf8-946edfab6e37" />
 
 ##  Diagrama de caso de uso
 
-<p align="center">
- <img width="45%" height="100%" alt="Untitled diagram-2025-11-10-105808" src="https://github.com/user-attachments/assets/ce48a6a9-7a33-48af-97fd-f51c205eb682" />
-</p>
+<img width="1121" height="752" alt="caso de uso bachess drawio" src="https://github.com/user-attachments/assets/be1c0b60-006d-494d-9cc4-db3252c1a69a" />
 
-&nbsp;
 
 # Documentación de Casos de Uso  
 **Sistema de Registro y Gestión de Baches - Bahía Blanca**
